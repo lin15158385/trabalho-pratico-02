@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>C:/Users/zongs/Desktop/trabalho pratico 02/trabalho pratico individual 02/trabalho pratico individual 02/Content/Sound/90s-game-ui-12-185105.mp3</SourceFile>
+  <SourceTime>2025-05-20T01:31:47.9358364+01:00</SourceTime>
+  <DestFile>C:/Users/zongs/Desktop/trabalho pratico 02/trabalho pratico individual 02/trabalho pratico individual 02/Content/bin/Windows/Content/Sound/90s-game-ui-12-185105.xnb</DestFile>
+  <DestTime>2025-05-22T00:36:06.6266288+01:00</DestTime>
+  <Importer>Mp3Importer</Importer>
+  <ImporterTime>2022-07-26T12:44:56+01:00</ImporterTime>
+  <Processor>SongProcessor</Processor>
+  <ProcessorTime>2022-07-26T12:44:56+01:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput>
+    <string>C:/Users/zongs/Desktop/trabalho pratico 02/trabalho pratico individual 02/trabalho pratico individual 02/Content/bin/Windows/Content/Sound/90s-game-ui-12-185105.wma</string>
+  </BuildOutput>
+</PipelineBuildEvent>
