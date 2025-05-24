@@ -14,9 +14,11 @@ namespace trabalho_pratico_individual_02
     {
         public float Speed { get; protected set; }
         public float Damage { get; protected set; }
-        public int Health { get; protected set; }
+        public int Health { get; set; }
         public bool CanFly { get; protected set; }
         public int _selectedUnitIndex = 0;
+
+        public bool IsDead { get; private set; } = false;
 
         public Vector2 Position;
         protected Texture2D Texture;
@@ -44,11 +46,21 @@ namespace trabalho_pratico_individual_02
                     unit.IsSelected = false;
 
                 this.IsSelected = true;
+                Game1.Instance._selectSound.Play();
             }
         }
 
+        public virtual void Die()
+        {
+            IsDead = true;
+            Game1.Instance.Units.Remove(this);
+            Game1.Instance._explosionSound.Play();
+            Game1.Instance.Explosions.Add(new Explosion(Position, Game1.Instance._explosionFrames));
+            // Ex: tocar som, criar efeito de explosão, etc，ainda nao pensei o que usar
+        }
         public virtual void Update(GameTime gameTime, Camera camera)
         {
+            if (IsDead) return;
             if (IsSelected && Mouse.GetState().RightButton == ButtonState.Pressed)
             {
                 Vector2 mouseWorld = new Vector2(Mouse.GetState().X, Mouse.GetState().Y);
@@ -79,10 +91,12 @@ namespace trabalho_pratico_individual_02
                     }
                 }
             }
+
         }
 
         public virtual void Draw(SpriteBatch spriteBatch)
         {
+            if (IsDead) return;
             Color color = IsSelected ? Color.Green : Color.White;
             spriteBatch.Draw(
                 Texture,
@@ -378,6 +392,7 @@ namespace trabalho_pratico_individual_02
             {
                 Hit = true;
                 Target.EnemyHealth -= 50; // dano direto
+                Game1.Instance._explosionSound.Play();
                 if (Target.EnemyHealth <= 0)
                 {
                     Target.Die(Game1.Instance.Coins, Game1.Instance.CoinFrames); // ou como estiveres a chamar

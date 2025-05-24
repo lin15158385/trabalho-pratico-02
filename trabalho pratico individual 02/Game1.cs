@@ -5,6 +5,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System.Linq;
+using Microsoft.Xna.Framework.Audio;
 
 namespace trabalho_pratico_individual_02
 {
@@ -14,13 +15,20 @@ namespace trabalho_pratico_individual_02
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
+        //----soms
+        public SoundEffect _startSound;
+        public SoundEffect _zombieSound;
+        public SoundEffect _explosionSound;
+        public SoundEffect _coinSound;
+        public SoundEffect _selectSound;
+        public SoundEffect _loseSound;
+
         private Camera _camera;
         private List<Unit> _units;
         private Texture2D _unitTexture;
         private Texture2D _tankTexture;
         private Texture2D _turretTexture;
         private Texture2D[] _turretAttackFrames;
-        private Texture2D _exhaustFireTexture;
         public Texture2D[] _explosionFrames;
         public Texture2D _projectileTexture;
         private List<Projectile> _projectiles = new List<Projectile>();
@@ -28,7 +36,7 @@ namespace trabalho_pratico_individual_02
         public List<Explosion> Explosions { get; private set; } = new List<Explosion>();
         public List<Unit> Units => _units;//ponteiro
         public static Game1 Instance { get; private set; }
-        protected Point _worldSize = new Point(6000, 3000); // tamanho total do mundo em pixels
+        public Point _worldSize = new Point(6000, 3000); // tamanho total do mundo em pixels
         public Vector2 WorldCenter => new Vector2(_worldSize.X / 2, _worldSize.Y / 2);
         public GameUI UI { get; private set; }
         //clasee inimigo
@@ -49,7 +57,7 @@ namespace trabalho_pratico_individual_02
         private Random _random = new Random();
 
         //gameui
-        private GameUI _ui;
+        public GameUI _ui;
         private Texture2D _buttonTexture;
         private Texture2D _buttonMainTexture;
         private SpriteFont _font;
@@ -132,6 +140,13 @@ namespace trabalho_pratico_individual_02
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             Pixel = new Texture2D(GraphicsDevice, 1, 1);
             Pixel.SetData(new[] { Color.White });
+
+            _startSound = Content.Load<SoundEffect>("Sound/game-start-6104");
+            _zombieSound = Content.Load<SoundEffect>("Sound/growling-zombie-104988");
+            _explosionSound = Content.Load<SoundEffect>("Sound/game-explosion-321700");
+            _coinSound = Content.Load<SoundEffect>("Sound/coin-collision-sound-342335");
+            _selectSound = Content.Load<SoundEffect>("Sound/select-sound-121244");
+            _loseSound = Content.Load<SoundEffect>("Sound/game-over-classic-206486");
 
             _unitTexture = Content.Load<Texture2D>("unit");
             _baseTexture = Content.Load<Texture2D>("base");
@@ -237,7 +252,7 @@ namespace trabalho_pratico_individual_02
 
             _playerBase.Update(gameTime);
 
-            if (CurrentGameState == GameState.Menu)
+            if (CurrentGameState == GameState.Menu || CurrentGameState == GameState.HighScore)
             {
                 _mainMenu.Update(gameTime, Mouse.GetState(), _previousMouse);
                 _previousMouse = Mouse.GetState();
@@ -348,6 +363,7 @@ namespace trabalho_pratico_individual_02
                 if (tipoInimigo == 0)
                 {
                     _enemies.Add(new Zombie(spawn, _zombieIdleFrames, _zombieWalkFrames, _zombieAttackFrames, _playerBase.Position));
+
                 }
                 else
                 {
@@ -358,9 +374,31 @@ namespace trabalho_pratico_individual_02
             foreach (var enemy in _enemies.ToList())
             {
                 enemy.Update(gameTime, _playerBase.Position, _units);
+
+                if (enemy.ReachedBase) // <-- Verifica se chegou à base
+                {
+                    // Salva pontuação
+                    string playerName = "Player"; // pode pedir nome depois se quiser
+                    int score = _ui.Points; // ou de onde estiver guardando a pontuação
+                    HighScoreManager.SaveScore(playerName, score);
+
+                    // Muda o estado para HighScore
+                    CurrentGameState = GameState.HighScore;
+
+                    // Limpa inimigos e outros para resetar o jogo
+                    _enemies.Clear();
+                    _units.Clear();
+                    _coins.Clear();
+                    _projectiles.Clear();
+                    Explosions.Clear();
+
+                    break; // sai do loop para evitar erros após limpar listas
+                }
+
                 if (!enemy.IsAlive)
                 {
                     _coins.Add(new Coin(enemy.Position, _coinFrames));
+                    Game1.Instance._zombieSound.Play();
                     _enemies.Remove(enemy);
                 }
             }
@@ -371,6 +409,7 @@ namespace trabalho_pratico_individual_02
                 if (coin.IsCollected)
                 {
                     _ui.AddMoney(coin.Value); // esse método já existe pelo seu comentário
+                    Game1.Instance._coinSound.Play();
                     UI.Points += 5;
                     _coins.Remove(coin);
                 }
@@ -392,7 +431,6 @@ namespace trabalho_pratico_individual_02
                     Explosions.Remove(explosion);
             }
 
-            
         }
 
         private Vector2 GetRandomEdgeSpawn()
@@ -412,7 +450,7 @@ namespace trabalho_pratico_individual_02
         }
         private void DrawHighScores()
         {
-            var scores = HighScoreManager.LoadScores();
+            var scores = HighScoreManager.LoadScores() ?? new List<(string, int)>();
             Vector2 pos = new Vector2(600, 200);
             _spriteBatch.DrawString(_font, "High Scores:", pos, Color.White);
             pos.Y += 40;
@@ -449,9 +487,6 @@ namespace trabalho_pratico_individual_02
 
             foreach (var unit in _units)
                 unit.Draw(_spriteBatch);
-
-            foreach (var explosion in Explosions)
-                explosion.Draw(_spriteBatch);
 
             // desenha retângulo so se estiver realmente arrastando
             if (_dragStart != null && _isDragging)
@@ -491,10 +526,22 @@ namespace trabalho_pratico_individual_02
 
             if (CurrentGameState == GameState.HighScore)
             {
+                _spriteBatch.End();            // fecha o batch de jogo
+                _spriteBatch.Begin();          // batch sem câmera
+
+                // 1) desenha o mesmo fundo do menu
+                _mainMenu.DrawBackground(_spriteBatch);
+
+                // 2) desenha o painel de High Scores por cima
                 DrawHighScores();
-                _spriteBatch.End();  // fecha antes de sair
+
+                _spriteBatch.End();
                 return;
             }
+            _spriteBatch.End();
+
+            _spriteBatch.Begin(); // sem transformação da câmera
+            _spriteBatch.Draw(_arrowTexture, new Vector2(100, 100), Color.White);
             _spriteBatch.End();
 
             if (CurrentGameState == GameState.Menu)
@@ -510,9 +557,5 @@ namespace trabalho_pratico_individual_02
 
             base.Draw(gameTime);
         }
-
-        //--------------
-        //_ui.AddMoney(enemy.Value);
-        //este codigo é para lista de inimigos e uma classe Enemy com propriedade Value
     }
 }

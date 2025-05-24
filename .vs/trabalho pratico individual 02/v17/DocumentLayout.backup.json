@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\zongs\\Desktop\\trabalho pratico 02\\trabalho pratico individual 02\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F51A5760-8FF0-4151-B8EC-F0324B980684}|trabalho pratico individual 02\\trabalho pratico individual 02.csproj|c:\\users\\zongs\\desktop\\trabalho pratico 02\\trabalho pratico individual 02\\trabalho pratico individual 02\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F51A5760-8FF0-4151-B8EC-F0324B980684}|trabalho pratico individual 02\\trabalho pratico individual 02.csproj|solutionrelative:trabalho pratico individual 02\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F51A5760-8FF0-4151-B8EC-F0324B980684}|trabalho pratico individual 02\\trabalho pratico individual 02.csproj|c:\\users\\zongs\\desktop\\trabalho pratico 02\\trabalho pratico individual 02\\trabalho pratico individual 02\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F51A5760-8FF0-4151-B8EC-F0324B980684}|trabalho pratico individual 02\\trabalho pratico individual 02.csproj|solutionrelative:trabalho pratico individual 02\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F51A5760-8FF0-4151-B8EC-F0324B980684}|trabalho pratico individual 02\\trabalho pratico individual 02.csproj|c:\\users\\zongs\\desktop\\trabalho pratico 02\\trabalho pratico individual 02\\trabalho pratico individual 02\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F51A5760-8FF0-4151-B8EC-F0324B980684}|trabalho pratico individual 02\\trabalho pratico individual 02.csproj|solutionrelative:trabalho pratico individual 02\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,16 +11,16 @@
       "RelativeMoniker": "D:0:0:{F51A5760-8FF0-4151-B8EC-F0324B980684}|trabalho pratico individual 02\\trabalho pratico individual 02.csproj|solutionrelative:trabalho pratico individual 02\\unit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F51A5760-8FF0-4151-B8EC-F0324B980684}|trabalho pratico individual 02\\trabalho pratico individual 02.csproj|c:\\users\\zongs\\desktop\\trabalho pratico 02\\trabalho pratico individual 02\\trabalho pratico individual 02\\content\\defaultfont.spritefont||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{F51A5760-8FF0-4151-B8EC-F0324B980684}|trabalho pratico individual 02\\trabalho pratico individual 02.csproj|solutionrelative:trabalho pratico individual 02\\content\\defaultfont.spritefont||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{F51A5760-8FF0-4151-B8EC-F0324B980684}|trabalho pratico individual 02\\trabalho pratico individual 02.csproj|c:\\users\\zongs\\desktop\\trabalho pratico 02\\trabalho pratico individual 02\\trabalho pratico individual 02\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F51A5760-8FF0-4151-B8EC-F0324B980684}|trabalho pratico individual 02\\trabalho pratico individual 02.csproj|solutionrelative:trabalho pratico individual 02\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F51A5760-8FF0-4151-B8EC-F0324B980684}|trabalho pratico individual 02\\trabalho pratico individual 02.csproj|c:\\users\\zongs\\desktop\\trabalho pratico 02\\trabalho pratico individual 02\\trabalho pratico individual 02\\content\\arrows\\arrow1.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
-      "RelativeMoniker": "D:0:0:{F51A5760-8FF0-4151-B8EC-F0324B980684}|trabalho pratico individual 02\\trabalho pratico individual 02.csproj|solutionrelative:trabalho pratico individual 02\\content\\arrows\\arrow1.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+      "AbsoluteMoniker": "D:0:0:{F51A5760-8FF0-4151-B8EC-F0324B980684}|trabalho pratico individual 02\\trabalho pratico individual 02.csproj|c:\\users\\zongs\\desktop\\trabalho pratico 02\\trabalho pratico individual 02\\trabalho pratico individual 02\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F51A5760-8FF0-4151-B8EC-F0324B980684}|trabalho pratico individual 02\\trabalho pratico individual 02.csproj|solutionrelative:trabalho pratico individual 02\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F51A5760-8FF0-4151-B8EC-F0324B980684}|trabalho pratico individual 02\\trabalho pratico individual 02.csproj|c:\\users\\zongs\\desktop\\trabalho pratico 02\\trabalho pratico individual 02\\trabalho pratico individual 02\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F51A5760-8FF0-4151-B8EC-F0324B980684}|trabalho pratico individual 02\\trabalho pratico individual 02.csproj|solutionrelative:trabalho pratico individual 02\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F51A5760-8FF0-4151-B8EC-F0324B980684}|trabalho pratico individual 02\\trabalho pratico individual 02.csproj|c:\\users\\zongs\\desktop\\trabalho pratico 02\\trabalho pratico individual 02\\trabalho pratico individual 02\\gameui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F51A5760-8FF0-4151-B8EC-F0324B980684}|trabalho pratico individual 02\\trabalho pratico individual 02.csproj|solutionrelative:trabalho pratico individual 02\\gameui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F51A5760-8FF0-4151-B8EC-F0324B980684}|trabalho pratico individual 02\\trabalho pratico individual 02.csproj|c:\\users\\zongs\\desktop\\trabalho pratico 02\\trabalho pratico individual 02\\trabalho pratico individual 02\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -37,6 +29,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{F51A5760-8FF0-4151-B8EC-F0324B980684}|trabalho pratico individual 02\\trabalho pratico individual 02.csproj|c:\\users\\zongs\\desktop\\trabalho pratico 02\\trabalho pratico individual 02\\trabalho pratico individual 02\\base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F51A5760-8FF0-4151-B8EC-F0324B980684}|trabalho pratico individual 02\\trabalho pratico individual 02.csproj|solutionrelative:trabalho pratico individual 02\\base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F51A5760-8FF0-4151-B8EC-F0324B980684}|trabalho pratico individual 02\\trabalho pratico individual 02.csproj|c:\\users\\zongs\\desktop\\trabalho pratico 02\\trabalho pratico individual 02\\trabalho pratico individual 02\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F51A5760-8FF0-4151-B8EC-F0324B980684}|trabalho pratico individual 02\\trabalho pratico individual 02.csproj|solutionrelative:trabalho pratico individual 02\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F51A5760-8FF0-4151-B8EC-F0324B980684}|trabalho pratico individual 02\\trabalho pratico individual 02.csproj|c:\\users\\zongs\\desktop\\trabalho pratico 02\\trabalho pratico individual 02\\trabalho pratico individual 02\\content\\defaultfont.spritefont||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F51A5760-8FF0-4151-B8EC-F0324B980684}|trabalho pratico individual 02\\trabalho pratico individual 02.csproj|solutionrelative:trabalho pratico individual 02\\content\\defaultfont.spritefont||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,17 +46,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Enemy.cs",
               "DocumentMoniker": "C:\\Users\\zongs\\Desktop\\trabalho pratico 02\\trabalho pratico individual 02\\trabalho pratico individual 02\\Enemy.cs",
               "RelativeDocumentMoniker": "trabalho pratico individual 02\\Enemy.cs",
               "ToolTip": "C:\\Users\\zongs\\Desktop\\trabalho pratico 02\\trabalho pratico individual 02\\trabalho pratico individual 02\\Enemy.cs",
               "RelativeToolTip": "trabalho pratico individual 02\\Enemy.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAswAsAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAABEBAAAAAAAAAAAnwOUAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-21T17:21:04.101Z",
               "IsPinned": true,
@@ -68,71 +68,71 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "GameUi.cs",
+              "DocumentMoniker": "C:\\Users\\zongs\\Desktop\\trabalho pratico 02\\trabalho pratico individual 02\\trabalho pratico individual 02\\GameUi.cs",
+              "RelativeDocumentMoniker": "trabalho pratico individual 02\\GameUi.cs",
+              "ToolTip": "C:\\Users\\zongs\\Desktop\\trabalho pratico 02\\trabalho pratico individual 02\\trabalho pratico individual 02\\GameUi.cs",
+              "RelativeToolTip": "trabalho pratico individual 02\\GameUi.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAArwC0AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T18:54:47.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "MainMenu.cs",
               "DocumentMoniker": "C:\\Users\\zongs\\Desktop\\trabalho pratico 02\\trabalho pratico individual 02\\trabalho pratico individual 02\\MainMenu.cs",
               "RelativeDocumentMoniker": "trabalho pratico individual 02\\MainMenu.cs",
               "ToolTip": "C:\\Users\\zongs\\Desktop\\trabalho pratico 02\\trabalho pratico individual 02\\trabalho pratico individual 02\\MainMenu.cs",
               "RelativeToolTip": "trabalho pratico individual 02\\MainMenu.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAjwEEAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAQwEYAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-23T16:47:47.285Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Game1.cs",
               "DocumentMoniker": "C:\\Users\\zongs\\Desktop\\trabalho pratico 02\\trabalho pratico individual 02\\trabalho pratico individual 02\\Game1.cs",
               "RelativeDocumentMoniker": "trabalho pratico individual 02\\Game1.cs",
               "ToolTip": "C:\\Users\\zongs\\Desktop\\trabalho pratico 02\\trabalho pratico individual 02\\trabalho pratico individual 02\\Game1.cs",
               "RelativeToolTip": "trabalho pratico individual 02\\Game1.cs",
-              "ViewState": "AgIAAOABAAAAAAAAAAD4v/ABAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAP8BAAAAAAAAAAAWwB8CAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-16T15:29:36.225Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Unit.cs",
               "DocumentMoniker": "C:\\Users\\zongs\\Desktop\\trabalho pratico 02\\trabalho pratico individual 02\\trabalho pratico individual 02\\Unit.cs",
               "RelativeDocumentMoniker": "trabalho pratico individual 02\\Unit.cs",
               "ToolTip": "C:\\Users\\zongs\\Desktop\\trabalho pratico 02\\trabalho pratico individual 02\\trabalho pratico individual 02\\Unit.cs",
               "RelativeToolTip": "trabalho pratico individual 02\\Unit.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAowPYAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAPMAAAAAAAAAAAAWwGYAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-16T15:32:31.672Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Arrow1.png",
-              "DocumentMoniker": "C:\\Users\\zongs\\Desktop\\trabalho pratico 02\\trabalho pratico individual 02\\trabalho pratico individual 02\\Content\\Arrows\\Arrow1.png",
-              "RelativeDocumentMoniker": "trabalho pratico individual 02\\Content\\Arrows\\Arrow1.png",
-              "ToolTip": "C:\\Users\\zongs\\Desktop\\trabalho pratico 02\\trabalho pratico individual 02\\trabalho pratico individual 02\\Content\\Arrows\\Arrow1.png",
-              "RelativeToolTip": "trabalho pratico individual 02\\Content\\Arrows\\Arrow1.png",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2025-05-23T04:20:37.554Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Camera.cs",
               "DocumentMoniker": "C:\\Users\\zongs\\Desktop\\trabalho pratico 02\\trabalho pratico individual 02\\trabalho pratico individual 02\\Camera.cs",
               "RelativeDocumentMoniker": "trabalho pratico individual 02\\Camera.cs",
               "ToolTip": "C:\\Users\\zongs\\Desktop\\trabalho pratico 02\\trabalho pratico individual 02\\trabalho pratico individual 02\\Camera.cs",
               "RelativeToolTip": "trabalho pratico individual 02\\Camera.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAArwBcAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAIA3wCAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T15:31:52.955Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-16T15:31:52.955Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "DefaultFont.spritefont",
               "DocumentMoniker": "C:\\Users\\zongs\\Desktop\\trabalho pratico 02\\trabalho pratico individual 02\\trabalho pratico individual 02\\Content\\DefaultFont.spritefont",
               "RelativeDocumentMoniker": "trabalho pratico individual 02\\Content\\DefaultFont.spritefont",
@@ -140,12 +140,11 @@
               "RelativeToolTip": "trabalho pratico individual 02\\Content\\DefaultFont.spritefont",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-05-16T18:40:40.591Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-16T18:40:40.591Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "Base.cs",
               "DocumentMoniker": "C:\\Users\\zongs\\Desktop\\trabalho pratico 02\\trabalho pratico individual 02\\trabalho pratico individual 02\\Base.cs",
               "RelativeDocumentMoniker": "trabalho pratico individual 02\\Base.cs",
@@ -157,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\zongs\\Desktop\\trabalho pratico 02\\trabalho pratico individual 02\\trabalho pratico individual 02\\Program.cs",
               "RelativeDocumentMoniker": "trabalho pratico individual 02\\Program.cs",
@@ -165,8 +164,7 @@
               "RelativeToolTip": "trabalho pratico individual 02\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T15:36:31.332Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-16T15:36:31.332Z"
             }
           ]
         }

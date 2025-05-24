@@ -596,47 +596,47 @@
 /processorParam:TextureFormat=Color
 /build:Soldier.png
 
-#begin Sound/90s-game-ui-12-185105.mp3
-/importer:Mp3Importer
-/processor:SongProcessor
+#begin Sound/90s-game-ui-12-185105.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
-/build:Sound/90s-game-ui-12-185105.mp3
+/build:Sound/90s-game-ui-12-185105.wav
 
-#begin Sound/coin-collision-sound-342335.mp3
-/importer:Mp3Importer
-/processor:SongProcessor
+#begin Sound/coin-collision-sound-342335.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
-/build:Sound/coin-collision-sound-342335.mp3
+/build:Sound/coin-collision-sound-342335.wav
 
-#begin Sound/game-explosion-321700.mp3
-/importer:Mp3Importer
-/processor:SongProcessor
+#begin Sound/game-explosion-321700.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
-/build:Sound/game-explosion-321700.mp3
+/build:Sound/game-explosion-321700.wav
 
-#begin Sound/game-over-classic-206486.mp3
-/importer:Mp3Importer
-/processor:SongProcessor
+#begin Sound/game-over-classic-206486.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
-/build:Sound/game-over-classic-206486.mp3
+/build:Sound/game-over-classic-206486.wav
 
-#begin Sound/game-start-6104.mp3
-/importer:Mp3Importer
-/processor:SongProcessor
+#begin Sound/game-start-6104.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
-/build:Sound/game-start-6104.mp3
+/build:Sound/game-start-6104.wav
 
-#begin Sound/growling-zombie-104988.mp3
-/importer:Mp3Importer
-/processor:SongProcessor
+#begin Sound/growling-zombie-104988.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
-/build:Sound/growling-zombie-104988.mp3
+/build:Sound/growling-zombie-104988.wav
 
-#begin Sound/select-sound-121244.mp3
-/importer:Mp3Importer
-/processor:SongProcessor
+#begin Sound/select-sound-121244.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
-/build:Sound/select-sound-121244.mp3
+/build:Sound/select-sound-121244.wav
 
 #begin Tank.png
 /importer:TextureImporter

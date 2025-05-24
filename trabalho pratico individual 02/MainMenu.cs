@@ -17,7 +17,7 @@ namespace trabalho_pratico_individual_02
         private SpriteFont _font;
         private Texture2D _buttonTexture;
 
-        private Button _startButton;
+        protected Button _startButton;
         private Button _highScoreButton;
 
         private Random _random = new Random();
@@ -30,19 +30,54 @@ namespace trabalho_pratico_individual_02
             _buttonTexture = buttonTex;
             _font = font;
 
-            _startButton = new Button(new Rectangle(600, 300, 200, 60), "Start", _font, () =>
+
+            _startButton = new Button(Rectangle.Empty, "Start", _font, () =>
             {
+                Game1.Instance._startSound.Play();
                 Game1.Instance.CurrentGameState = Game1.GameState.Playing;
             });
 
-            _highScoreButton = new Button(new Rectangle(600, 380, 200, 60), "High Scores", _font, () =>
+            _highScoreButton = new Button(Rectangle.Empty, "Score", _font, () =>
             {
                 Game1.Instance.CurrentGameState = Game1.GameState.HighScore;
             });
         }
 
+        public void ResizeButtons(Viewport viewport)
+        {
+            int buttonWidth = 200;
+            int buttonHeight = 60;
+
+            int centerX = viewport.Width / 2;
+            int centerY = viewport.Height / 2;
+
+            _startButton.Bounds = new Rectangle(centerX - buttonWidth / 2, centerY - 40, buttonWidth, buttonHeight);
+            _highScoreButton.Bounds = new Rectangle(centerX - buttonWidth / 2, centerY + 40, buttonWidth, buttonHeight);
+        }
+        public void DrawBackground(SpriteBatch spriteBatch)
+        {
+            // Fundo tileado
+            for (int x = 0; x < 1600; x += _backgroundTexture.Width)
+                for (int y = 0; y < 900; y += _backgroundTexture.Height)
+                    spriteBatch.Draw(_backgroundTexture, new Vector2(x, y), Color.White);
+
+            // inimigos de fundo (opcional)
+            foreach (var enemy in _menuEnemies)
+                enemy.Draw(spriteBatch);
+        }
+
         public void Update(GameTime gameTime, MouseState mouse, MouseState prevMouse)
         {
+            ResizeButtons(Game1.Instance.GraphicsDevice.Viewport);  
+
+            if (_menuEnemies.Any(e => e.ReachedBase))
+            {
+                string playerName = "Player";
+                int score = Game1.Instance.UI.Points;
+                HighScoreManager.SaveScore(playerName, score);
+                Game1.Instance.CurrentGameState = Game1.GameState.HighScore;
+            }
+
             // Spawn de inimigos no fundo
             if (_random.NextDouble() < 0.01)
             {
@@ -53,6 +88,9 @@ namespace trabalho_pratico_individual_02
                 if (tipoInimigo == 0)
                 {
                     _menuEnemies.Add(new Zombie(spawn, Game1.Instance._zombieIdleFrames, Game1.Instance._zombieWalkFrames, null, new Vector2(1600, 800)));
+
+                    if (_random.Next(2) == 0)
+                    Game1.Instance._zombieSound.Play();
                 }
                 else
                 {

@@ -12,7 +12,7 @@ public class Camera
     private const float MaxZoom = 2.0f;
 
     private const int ScrollBorder = 20;
-    private const float MoveSpeed = 20f;
+    private float MoveSpeed = 20f;
 
     private int _previousScrollValue;
 
@@ -29,6 +29,10 @@ public class Camera
         _previousScrollValue = Mouse.GetState().ScrollWheelValue;
     }
 
+    public void Reset()
+    {
+        _position = Vector2.Zero;    // posição inicial (canto superior esquerdo)
+    }
     public void Update(GraphicsDevice graphicsDevice)
     {
         _viewport = graphicsDevice.Viewport;

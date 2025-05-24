@@ -15,7 +15,6 @@ namespace trabalho_pratico_individual_02
         private Texture2D _tankTexture;
         private Texture2D _droneTexture;
         private Texture2D _turretTexture;
-        private Texture2D _turretPreviewTexture;
         private bool _placingTurret = false;
         public int Points { get; set; } = 0;
         public int Money { get; set; } = 100;
@@ -34,6 +33,12 @@ namespace trabalho_pratico_individual_02
             _unitButtons = new List<UnitButton>();
         }
 
+        public void Reset()
+        {
+            Money = 100;
+            Points = 0;
+            // outros resets de UI
+        }
         public class UnitButton
         {
             public Rectangle Bounds;
@@ -106,7 +111,6 @@ namespace trabalho_pratico_individual_02
 
         public void LoadContent()
         {
-            _unitButtons = new List<UnitButton>();
 
             // Carrega as texturas dos ícones
             _soldierTexture = Game1.Instance.Content.Load<Texture2D>("soldier");
@@ -153,7 +157,7 @@ namespace trabalho_pratico_individual_02
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.DrawString(_font, $"Refound: {Money}", new Vector2(10, 10), Color.Yellow);
+            spriteBatch.DrawString(_font, $"Fund: {Money}", new Vector2(10, 10), Color.Yellow);
             spriteBatch.DrawString(_font, $"Points: {Points}", new Vector2(10, 50), Color.White);
 
             foreach (var btn in _unitButtons)
