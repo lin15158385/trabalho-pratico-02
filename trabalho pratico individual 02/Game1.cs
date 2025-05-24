@@ -22,6 +22,7 @@ namespace trabalho_pratico_individual_02
         public SoundEffect _coinSound;
         public SoundEffect _selectSound;
         public SoundEffect _loseSound;
+        public SoundEffect _backgroundSound;
 
         private Camera _camera;
         private List<Unit> _units;
@@ -130,7 +131,6 @@ namespace trabalho_pratico_individual_02
             _units = new List<Unit>();
             EnableMaximizeButton();
 
-
             base.Initialize();
         }
 
@@ -147,6 +147,7 @@ namespace trabalho_pratico_individual_02
             _coinSound = Content.Load<SoundEffect>("Sound/coin-collision-sound-342335");
             _selectSound = Content.Load<SoundEffect>("Sound/select-sound-121244");
             _loseSound = Content.Load<SoundEffect>("Sound/game-over-classic-206486");
+            _backgroundSound = Content.Load<SoundEffect>("Sound/game-music-loop-7-145285");
 
             _unitTexture = Content.Load<Texture2D>("unit");
             _baseTexture = Content.Load<Texture2D>("base");
@@ -382,6 +383,7 @@ namespace trabalho_pratico_individual_02
                     int score = _ui.Points; // ou de onde estiver guardando a pontuação
                     HighScoreManager.SaveScore(playerName, score);
 
+                    Game1.Instance._loseSound.Play();
                     // Muda o estado para HighScore
                     CurrentGameState = GameState.HighScore;
 

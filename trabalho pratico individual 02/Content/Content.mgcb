@@ -614,6 +614,12 @@
 /processorParam:Quality=Best
 /build:Sound/game-explosion-321700.wav
 
+#begin Sound/game-music-loop-7-145285.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sound/game-music-loop-7-145285.wav
+
 #begin Sound/game-over-classic-206486.wav
 /importer:WavImporter
 /processor:SoundEffectProcessor

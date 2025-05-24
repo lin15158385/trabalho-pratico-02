@@ -34,6 +34,7 @@ namespace trabalho_pratico_individual_02
             _startButton = new Button(Rectangle.Empty, "Start", _font, () =>
             {
                 Game1.Instance._startSound.Play();
+                Game1.Instance._backgroundSound.Play();
                 Game1.Instance.CurrentGameState = Game1.GameState.Playing;
             });
 

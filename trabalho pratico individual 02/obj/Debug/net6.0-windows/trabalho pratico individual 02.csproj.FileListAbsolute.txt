@@ -500,3 +500,4 @@ C:\Users\zongs\Desktop\trabalho pratico 02\trabalho pratico individual 02\trabal
 C:\Users\zongs\Desktop\trabalho pratico 02\trabalho pratico individual 02\trabalho pratico individual 02\bin\Debug\net6.0-windows\Content\Enemy_Skeleton\Skeleton_Walk\tile002.xnb
 C:\Users\zongs\Desktop\trabalho pratico 02\trabalho pratico individual 02\trabalho pratico individual 02\bin\Debug\net6.0-windows\Content\Enemy_Skeleton\Skeleton_Walk\tile003.xnb
 C:\Users\zongs\Desktop\trabalho pratico 02\trabalho pratico individual 02\trabalho pratico individual 02\bin\Debug\net6.0-windows\Content\Button_Main.xnb
+C:\Users\zongs\Desktop\trabalho pratico 02\trabalho pratico individual 02\trabalho pratico individual 02\bin\Debug\net6.0-windows\Content\Sound\game-music-loop-7-145285.xnb
