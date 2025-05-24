@@ -20,7 +20,7 @@ O objetivo é **sobreviver o maior tempo possível**, derrotando os inimigos ant
 
 ## 🛠️ Decisões de Implementação
 
-- **Herança e polimorfismo** foram usados para reutilizar lógica entre diferentes inimigos (`Enemy`, `Zombie`, `Skeleton`).
+- **Herança e polimorfismo** foram usados para reutilizar lógica entre diferentes herancas (`Enemy`, `Zombie`, `Skeleton`)(`Unit`, `Tank`, `Turret`,e ect).
 - A **animação de personagens** é feita por ciclos de frames, com controle de tempo entre frames para animações suaves.
 - A movimentação dos inimigos utiliza vetores direcionais com velocidade fixa.
 - Os **ataques** foram implementados com temporizadores e colisões entre retângulos (`Bounds`).
