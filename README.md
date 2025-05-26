@@ -76,4 +76,12 @@ O objetivo é **sobreviver o maior tempo possível**, derrotando os inimigos ant
 - Criar sistema de níveis e dificuldade crescente
 - Adicionar interface de jogador (UI)
 - Mais Unidades e Inimigos
-- Um organizacao melhor para codigos
+- Um organizacao melhor para 
+
+
+---
+
+https://caz-creates-games.itch.io/skeleton/download/eyJleHBpcmVzIjoxNzQ3OTY2NTY5LCJpZCI6MTg3MzYzOH0%3d.NR%2fsmf1KpzFOABlf0EH5wcgxt40%3d
+https://craftpix.net/freebies/free-top-down-military-boats-pixel-art/
+https://totuslotus.itch.io/pixel-coins
+https://arydian.itch.io/simple-wooden-bow-and-arrows
