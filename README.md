@@ -7,7 +7,7 @@
 
 ## 🎮 Descrição do Jogo
 
-Este jogo é um **Tower Defense simplificado de RTS like**, desenvolvido com o framework **MonoGame**, onde o jogador deve defender a base central de inimigos que surgem de fora do mapa e tentam alcançá-la.
+Este jogo é um **Tower Defense simplificado**, desenvolvido com o framework **MonoGame**, onde o jogador deve defender a base central de inimigos que surgem de fora do mapa e tentam alcançá-la.
 
 O jogador controla uma ou mais **unidades defensoras** que automaticamente atacam inimigos próximos. Os inimigos podem ser de diferentes tipos, como:
 
